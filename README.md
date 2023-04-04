@@ -5,7 +5,7 @@
 
 ## I'm an Engineer, and I love making cool stuff!
 - 🔭 I'm currently working on a [Terminal based Sudoku Project]()!
-- 🌱 I'm currently learning [ARM LEGV8]()
+- 🌱 I'm currently learning about Operating Systems
 - 💬 Ask me about my shell prompt
 - ⚡ Fun fact: I teach a class about learning how to get good at git!
 
