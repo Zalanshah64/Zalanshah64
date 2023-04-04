@@ -1,5 +1,3 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Zalanshah64.Zalanshah64&left_color=green&right_color=red)
-
 ### Hi there, I'm Shah 👋
 
 
@@ -14,7 +12,6 @@
 
 
 ### 🤝 Connect with me:
-<!-- ![](https://komarev.com/ghpvc/?username=jha-vineet69&color=7957d5) -->
 
 <a href="www.linkedin.com/in/zalan-shah">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 </a>
