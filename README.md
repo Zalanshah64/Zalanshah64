@@ -5,7 +5,7 @@
 - 🔭 I'm currently working on a [Terminal based Sudoku Project]()!
 - 🌱 I'm currently learning about Operating Systems
 - 💬 Ask me about my shell prompt
-- ⚡ Fun fact: I teach a class about learning how to get good at git!
+- ⚡ Fun fact: I teach a class at the University of Michigan, Ann Arbor!
 
 ---
 
