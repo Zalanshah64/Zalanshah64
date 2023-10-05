@@ -32,9 +32,9 @@
 [<code><img src="images/C++.svg" height="100px" alt="C++" ></code>](https://en.wikipedia.org/wiki/C%2B%2B)
 [<code><img src="images/Javascript.svg" height="100px" alt="Javascript" ></code>](https://en.wikipedia.org/wiki/JavaScript)
 [<code><img src="images/Python.svg" height="100px" alt="Python" ></code>](https://www.python.org/)
-[<code><img src="images/MATLAB.png" height="100px" alt="MATLAB" ></code>](https://www.mathworks.com/products/matlab.html)
 [<code><img src="images/Java.svg" height="100px" alt="Java" ></code>](https://www.java.com/)
 [<code><img src="images/Arduino.svg" height="100px" alt="Arduino C" ></code>](https://www.arduino.cc/)
+[<code><img src="images/MATLAB.png" height="100px" alt="MATLAB" ></code>](https://www.mathworks.com/products/matlab.html)
 [<code><img src="images/Julia.png" height="100px" alt="Julia" ></code>](https://julialang.org/)
 
 <br>
@@ -81,6 +81,7 @@
 [<code><img src="images/Git.svg" height="100px" alt="Git" ></code>](https://git-scm.com/)
 [<code><img src="images/VSCode.svg" height="100px" alt="Visual Studio Code" ></code>](https://code.visualstudio.com/)
 [<code><img src="images/Vim.svg" height="100px" alt="Vim" ></code>](https://www.vim.org/)
+[<code><img src="images/Docker.png" height="100px" ></code>](https://www.docker.com/)
 
 <br>
 
