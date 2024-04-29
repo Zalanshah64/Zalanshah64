@@ -1,14 +1,7 @@
 ### Hi there, I'm Shah 👋
 
 
-## I'm an Engineer, and I love making cool stuff!
-- 🌱 I'm currently learning about computer security
-- 💬 Ask me about my shell prompt
-- ⚡ Fun fact: I teach a class at the University of Michigan, Ann Arbor!
-
----
-
-
+## I'm an Engineer, and I like helping people!
 
 ### 🤝 Connect with me:
 
@@ -35,7 +28,6 @@
 [<code><img src="images/Java.svg" height="100px" alt="Java" ></code>](https://www.java.com/)
 [<code><img src="images/Arduino.svg" height="100px" alt="Arduino C" ></code>](https://www.arduino.cc/)
 [<code><img src="images/MATLAB.png" height="100px" alt="MATLAB" ></code>](https://www.mathworks.com/products/matlab.html)
-[<code><img src="images/Julia.png" height="100px" alt="Julia" ></code>](https://julialang.org/)
 
 <br>
 
@@ -82,8 +74,17 @@
 [<code><img src="images/VSCode.svg" height="100px" alt="Visual Studio Code" ></code>](https://code.visualstudio.com/)
 [<code><img src="images/Vim.svg" height="100px" alt="Vim" ></code>](https://www.vim.org/)
 [<code><img src="images/Docker.png" height="100px" ></code>](https://www.docker.com/)
+[<code><img src="images/Latex.png" height="100px" alt="LaTeX"></code>](https://www.latex-project.org/)
 
 <br>
+
+---
+
+### 👨‍💻 Operating Systems:
+<br>
+
+[<code><img src="images/Windows.png" height="100px" alt="Windows" ></code>](https://www.microsoft.com/en-us/windows)
+[<code><img src="images/Ubuntu.png" height="100px" alt="Linux" ></code>](https://ubuntu.com/)
 
 ---
 
