@@ -85,6 +85,7 @@
 
 [<code><img src="images/Windows.png" height="100px" alt="Windows" ></code>](https://www.microsoft.com/en-us/windows)
 [<code><img src="images/Ubuntu.png" height="100px" alt="Linux" ></code>](https://ubuntu.com/)
+[<code><img src="images/PiOS.svg" height="100px" alt="Raspberry Pi OS" ></code>](https://www.raspberrypi.com/software/)
 
 ---
 
