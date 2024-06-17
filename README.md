@@ -51,6 +51,7 @@
 
 [<code><img src="images/Nodejs.png" height="100px" alt="Nodejs" ></code>](https://nodejs.org/)
 [<code><img src="images/Flask.png" height="100px" alt="Flask" ></code>](https://flask.palletsprojects.com/)
+[<code><img src="images/Nginx.png" height="100px" alt="Nginx" ></code>](https://nginx.org/en/)
 
 <br>
 
@@ -75,6 +76,7 @@
 [<code><img src="images/Vim.svg" height="100px" alt="Vim" ></code>](https://www.vim.org/)
 [<code><img src="images/Docker.png" height="100px" ></code>](https://www.docker.com/)
 [<code><img src="images/Latex.png" height="100px" alt="LaTeX"></code>](https://www.latex-project.org/)
+[<code><img src="images/Cloudflare.png" height="100px" alt="Cloudflare"></code>](https://www.cloudflare.com/)
 
 <br>
 
@@ -85,7 +87,19 @@
 
 [<code><img src="images/Windows.png" height="100px" alt="Windows" ></code>](https://www.microsoft.com/en-us/windows)
 [<code><img src="images/Ubuntu.png" height="100px" alt="Linux" ></code>](https://ubuntu.com/)
-[<code><img src="images/PiOS.svg" height="100px" alt="Raspberry Pi OS" ></code>](https://www.raspberrypi.com/software/)
+[<code><img src="images/Raspbian.svg" height="100px" alt="Raspbian" ></code>](https://www.raspberrypi.com/software/)
+
+<br>
+
+---
+
+### 👨‍💻 Security:
+<br>
+
+[<code><img src="images/Wireshark.png" height="100px" alt="Wireshark" ></code>](https://www.wireshark.org/)
+[<code><img src="images/Ghidra.png" height="100px" alt="Ghidra" ></code>](https://www.ghidra-sre.org/)
+
+<br>
 
 ---
 
