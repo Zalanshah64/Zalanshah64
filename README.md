@@ -5,7 +5,7 @@
 
 ### 🤝 Connect with me:
 
-<a href="www.linkedin.com/in/zalan-shah">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
+<a href="https://www.linkedin.com/in/zalan-shah/">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 </a>
 
 <a href="mailto:zalanshah64@gmail.com">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
