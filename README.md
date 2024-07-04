@@ -98,6 +98,7 @@
 
 [<code><img src="images/Wireshark.png" height="100px" alt="Wireshark" ></code>](https://www.wireshark.org/)
 [<code><img src="images/Ghidra.png" height="100px" alt="Ghidra" ></code>](https://www.ghidra-sre.org/)
+[<code><img src="images/Duo.png" height="100px" alt="Duo" ></code>](https://duo.com/)
 
 <br>
 
