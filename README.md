@@ -1,7 +1,7 @@
 ### Hi there, I'm Shah 👋
 
 
-<img src="http://zalanshah.com/api/github_zalanshah64_banner/" height="100px" alt="" >
+<!-- <img src="http://zalanshah.com/api/github_zalanshah64_banner/"> -->
 
 ### 🤝 Connect with me:
 
