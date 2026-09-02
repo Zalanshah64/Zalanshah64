@@ -136,6 +136,19 @@ visibly different from "failed to upload". It exits 0 with a `::warning::`
 when the hostname does not answer at all, because a certificate still being
 issued is a wait rather than a defect, and fails only on a wrong answer.
 
+"Does not answer" covers two shapes, and the retry loop waits through both. A
+hostname whose certificate is still issuing goes silent; once the edge starts
+answering but the route is not live yet, Cloudflare serves its own HTML error
+page instead, often a `403`. The Worker produces neither — it returns
+`image/svg+xml` or a `404` — so an HTML error page means the request never
+reached it. The first deploy of this Worker failed its smoke test that way,
+25 seconds after upload, and was serving normally ten minutes later.
+
+A `403` that survives all five retries is a different problem: Bot Fight Mode
+or a WAF rule judging the client on IP reputation, which CI runners trip and
+browsers do not. That still warns rather than fails, on the grounds that the
+upload succeeded either way; fix it with a WAF skip rule for the hostname.
+
 ### Runtime configuration
 
 There is none, deliberately — no secrets, no bindings, no `wrangler secret put`.

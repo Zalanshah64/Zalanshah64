@@ -1,4 +1,5 @@
 <div align="center"><img src="https://typing.zalanshah.com/" alt=""></div>
+<div align="center"><sub><i> (refresh the page!)</i></sub></div>
 
 ### 🤝 Connect with me:
 
