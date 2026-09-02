@@ -1,0 +1,13 @@
+name = "typing-svg"
+main = "src/index.ts"
+compatibility_date = "2026-08-22"
+
+# No workers.dev fallback: this Worker is reachable only at the custom domain.
+workers_dev = false
+
+# There is deliberately no `routes` block: the hostname comes from
+# WORKER_HOSTNAME and reaches wrangler as `deploy --domain`, so the URL lives
+# in exactly one place. See deploy.sh and the README.
+
+[observability]
+enabled = true

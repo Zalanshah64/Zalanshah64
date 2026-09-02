@@ -1,0 +1,31 @@
+{
+  "name": "typing-svg",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "deploy": "./deploy.sh",
+    "deploy:raw": "wrangler deploy",
+    "smoke": "./smoke.sh",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p test",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.13.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@cloudflare/workers-types": "^5.20260830.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.127.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260828.1": true,
+    "workerd@1.20260815.1": true
+  }
+}

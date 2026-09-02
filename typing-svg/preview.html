@@ -1,0 +1,64 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>typing-svg preview</title>
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 2rem; background: #fff; color: #111; }
+  section { margin-bottom: 2rem; }
+  h2 { font-size: 13px; font-weight: 600; margin: 0 0 .35rem; }
+  code { font-size: 12px; color: #666; display: block; margin-bottom: .5rem; }
+  .dark { background: #0d1117; padding: 1rem; border-radius: 6px; }
+  button { font: inherit; padding: .4rem .8rem; }
+</style>
+
+<p><button onclick="document.querySelectorAll('img').forEach(i=>i.src=i.src.split('&_=')[0]+'&_='+Math.random())">
+  Reload all (new random phrases)
+</button></p>
+
+<section>
+  <h2>Defaults — transparent bg, on white</h2>
+  <code>/?</code>
+  <img src="http://127.0.0.1:8787/?">
+</section>
+
+<section>
+  <h2>Defaults — transparent bg, on dark</h2>
+  <code>/?</code>
+  <div class="dark"><img src="http://127.0.0.1:8787/?"></div>
+</section>
+
+<section>
+  <h2>Colour candidates &mdash; each shown on white, then on GitHub dark</h2>
+  <code>#1f6feb Primer blue 5 (current default) &mdash; GitHub's accent, 4.6:1 light / 4.1:1 dark</code>
+  <img src="http://127.0.0.1:8787/?fg=%231f6feb">
+  <div class="dark"><img src="http://127.0.0.1:8787/?fg=%231f6feb"></div>
+  <code>#388bfd Primer blue 4 &mdash; brighter, leans toward the dark-mode link colour &mdash; 3.3:1 / 5.7:1</code>
+  <img src="http://127.0.0.1:8787/?fg=%23388bfd">
+  <div class="dark"><img src="http://127.0.0.1:8787/?fg=%23388bfd"></div>
+  <code>#6e7781 Primer neutral grey &mdash; understated, matches GitHub's muted body text &mdash; 4.6:1 / 4.2:1</code>
+  <img src="http://127.0.0.1:8787/?fg=%236e7781">
+  <div class="dark"><img src="http://127.0.0.1:8787/?fg=%236e7781"></div>
+  <code>#8250df Primer purple &mdash; GitHub's &ldquo;merged PR&rdquo; colour &mdash; 5.1:1 / 3.8:1</code>
+  <img src="http://127.0.0.1:8787/?fg=%238250df">
+  <div class="dark"><img src="http://127.0.0.1:8787/?fg=%238250df"></div>
+  <code>#58a6ff GitHub's dark-mode link blue &mdash; note how it fades on white (2.5:1)</code>
+  <img src="http://127.0.0.1:8787/?fg=%2358a6ff">
+  <div class="dark"><img src="http://127.0.0.1:8787/?fg=%2358a6ff"></div>
+</section>
+
+<section>
+  <h2>Fast, typo-heavy</h2>
+  <code>/?cps=20&amp;errorRate=0.3&amp;size=32</code>
+  <img src="http://127.0.0.1:8787/?cps=20&errorRate=0.3&size=32">
+</section>
+
+<section>
+  <h2>Solid bg, no caret, plays once</h2>
+  <code>/?bg=%230d1117&amp;fg=%23ff7b72&amp;caret=false&amp;loop=false&amp;size=30</code>
+  <img src="http://127.0.0.1:8787/?bg=%230d1117&fg=%23ff7b72&caret=false&loop=false&size=30">
+</section>
+
+<section>
+  <h2>Slow, no typos, serif</h2>
+  <code>/?cps=5&amp;errorRate=0&amp;font=Georgia&amp;size=28&amp;fg=%23111111</code>
+  <img src="http://127.0.0.1:8787/?cps=5&errorRate=0&font=Georgia&size=28&fg=%23111111">
+</section>

@@ -1,0 +1,72 @@
+name: Deploy typing-svg
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "typing-svg/**"
+      - ".github/workflows/deploy-typing-svg.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-typing-svg
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Test and deploy
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: typing-svg
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: typing-svg/package-lock.json
+
+      - name: Verify credentials and hostname are present
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WORKER_HOSTNAME: ${{ vars.WORKER_HOSTNAME }}
+        run: |
+          missing=
+          [ -n "$CLOUDFLARE_API_TOKEN" ]  || missing="$missing CLOUDFLARE_API_TOKEN(secret)"
+          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || missing="$missing CLOUDFLARE_ACCOUNT_ID(secret)"
+          [ -n "$WORKER_HOSTNAME" ]       || missing="$missing WORKER_HOSTNAME(variable)"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing:$missing"
+            echo "Settings -> Secrets and variables -> Actions."
+            echo "WORKER_HOSTNAME belongs on the Variables tab, not Secrets:"
+            echo "it is a public hostname, and masking it would only obscure the logs."
+            exit 1
+          fi
+          echo "Deploying to $WORKER_HOSTNAME"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WORKER_HOSTNAME: ${{ vars.WORKER_HOSTNAME }}
+        run: ./deploy.sh --skip-tests --no-smoke
+
+      - name: Smoke test
+        env:
+          WORKER_HOSTNAME: ${{ vars.WORKER_HOSTNAME }}
+        run: ./smoke.sh
